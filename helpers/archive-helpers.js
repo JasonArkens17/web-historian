@@ -16,7 +16,6 @@ exports.initialize = function(pathsObj) {
   });
 };
 
-
 exports.readListOfUrls = function(callback) {
   fs.readFile(exports.paths.list, function(err, sites) {
     sites = sites.toString().split('\n');
